@@ -16,7 +16,7 @@ from pyrogram.errors import FloodWait, UserIsBlocked, PeerIdInvalid
 # === Bot Credentials ===
 API_ID = 28129546  # Replace with your API ID
 API_HASH = "f0985e4f023d1406fe8ee76717651e85"  # Replace with your API HASH
-BOT_TOKEN = "7796238248:AAGVcWL0pLJZnEL-oxS2IzzuSg8ImClpcVM"  # Replace with your BOT TOKEN
+BOT_TOKEN = "7796238248:AAFqSY_MfrY5k4miqjFdYxF7D1DXHM98bOc"  # Replace with your BOT TOKEN
 
 # === RapidAPI Credentials ===
 RAPIDAPI_KEY = "b4b76986admsh4ace8959ebfd8bep1109a9jsn7acb2a172e39"
