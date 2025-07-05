@@ -94,10 +94,7 @@ def extract_video_link(result):
                 return obj
         return None
     return recursive_search(result)
-    
-@app.on_message(filters.private)
-async def clear_keyboard(client, message):
-    await message.reply("Keyboard removed ✅", reply_markup=ReplyKeyboardRemove())
+
 # === Message Handlers ===
 @app.on_message(filters.command("start") & filters.private)
 def start_cmd(client, message):
