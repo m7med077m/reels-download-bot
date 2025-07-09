@@ -1,16 +1,16 @@
 FROM python:3.11-slim
 
-# تثبيت المتطلبات الأساسية
+# تثبيت ffmpeg
 RUN apt update && apt install -y ffmpeg
 
-# إنشاء مجلد التطبيق
+# تعيين مجلد العمل داخل الحاوية
 WORKDIR /app
 
-# نسخ الملفات
+# نسخ كل الملفات من repo إلى داخل /app
 COPY . .
 
-# تثبيت مكتبات Python
-RUN pip install -r requirements.txt
+# تثبيت المتطلبات
+RUN pip install --no-cache-dir -r requirements.txt
 
-# تحديد الأمر عند التشغيل
+# تشغيل البوت
 CMD ["python3", "main.py"]
